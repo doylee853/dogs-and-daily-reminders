@@ -1,0 +1,25 @@
+{
+  "name": "dogs-and-daily-reminders",
+  "version": "1.0.0",
+  "description": "A website aimed towards mental health acknowledgement and improvement",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doylee853/dogs-and-daily-reminders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/doylee853/dogs-and-daily-reminders#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "15.1.0"
+  }
+}
