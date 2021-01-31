@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dogs + Daily Reminders</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="../css/index.css"> -->
+        <!-- <script src="../js/audioplayer.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+          crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.js"></script>
+      </head>
+
+      <style>
+        body {
+          background-image: url('https://s3.amazonaws.com/fumcbirmingham/wp-content/uploads/2018/06/22093937/park-iStock-599901324.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+
+        .frame {
+          position: absolute;
+          /* top: 50%; */
+          left: 10%;
+          width: 600px;
+          height: 500px;
+          border: 10px solid rgb(156, 0, 0);
+          background: #eee;
+          /* margin: auto; */
+          /* margin-left: 100px; */
+          padding: 15px 10px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 40%;
+          transform: translate(-50%, -50%);
+          font-size: 28px;
+          color: lavender;
+        }
+
+        div.transbox {
+            position: absolute;
+            width: 600px;
+            height: 500px;
+            top: 50%;
+            left: 10%;
+            margin-left: 500px;
+            padding: 15px 10px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+
+        /* div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        } */
+
+        /* .navbar.center .navbar-inner {
+          text-align: center;
+        }
+        .navbar.center .navbar-inner .nav {
+          display:inline-block;
+          float: none;
+        } */
+      </style>
+
+      
+      <body>
+        <nav class="navbar navbar-dark bg-light">
+          <div class="col-12">
+            <h3 style="color:cornflowerblue; text-align: center;">
+              Dogs + Daily Reminders
+            </h3>
+          </div>
+        </nav>
+      
+      <!-- Deleted nav bar -->
+        <!-- <nav class="navbar fixed-bottom navbar-light bg-dark">
+          <div class="col-1">
+            <h4 style="color: white; text-align: center;">Previous</h2>
+          </div>
+          <div class="col-2">
+            <h2 id="song-title" style="color: white; text-align: center;">No Song Selected</h2>
+            <h3 id="artist-name" style="color: white; text-align: center;"></h3>
+          </div>
+          <div class="col-1">
+            <h4 style="color: white; text-align: center;">Next</h2>
+          </div>
+          <div class="container-audio col-7">
+            <audio controls autoplay loop id="player">
+                <source src="" type="audio/mp3">
+                Your browser dose not Support the audio Tag
+            </audio>
+        </div>
+        </nav> -->
+      </body>
+      <br><br><br><br>
+      <div>
+        <div class="frame" style="float: left; margin-right: 15px;">
+          <img src=<%= picture %>>
+        </div>
+
+        <div class="container">
+            <div class="transbox" style="float: right;">
+                <!-- <img src="https://www.virtualdatapartners.com/wp-content/uploads/2016/06/Gray-background-3.jpg" opacity=".2" alt="Gray" style="width:50%;"> -->
+                <!-- <div class="centered">This is the dog of the day, Kota</div> -->
+                <p style="font-size: 28px; color: rgb(12, 11, 12); margin-left: 15px; margin-right: 15px;">This is the dog of the day, <%= dogName %>.</p>
+                <br><br><br>
+                <p style="font-size: 28px; color: rgb(12, 11, 12); margin-left: 15px; margin-right: 15px;"><%= dogName %> is here to tell you that you're doing a great job, even if things are looking bleak. There will always be better times ahead, and you don't want to miss those.</p>
+                <!-- <div class="bottom-left">Bottom Left</div>
+                <div class="top-left">Top Left</div>
+                <div class="top-right">Top Right</div>
+                <div class="bottom-right">Bottom Right</div>
+                <div class="centered">Centered</div> -->
+            </div>
+        </div>
+        <!-- <p style="font-size: 28px; color: white; margin-right: 25px;">This is the dog of the day, Kota.</p>
+        <br><br><br>
+        <p style="font-size: 28px; color: lavender; margin-right: 25px;">Kota is here to tell you that you're doing a great job, even if things are looking bleak. There will always be better times ahead, and you don't want to miss those.</p> -->
+      </div>
+
+
+</html>
+
+
+<!-- <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/47420117_1961727964133202_1600867708608446464_o.jpg?_nc_cat=107&ccb=2&_nc_sid=cdbe9c&_nc_ohc=2UbxOpL6iVIAX9jaf0e&_nc_ht=scontent-lga3-2.xx&oh=2d91c3d53d9e8e1c250cd14ac18d5a9c&oe=603C29ED" alt="LittleDog"> -->
+          <!-- <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/33994826_10212553022881579_5701784890366754816_o.jpg?_nc_cat=103&ccb=2&_nc_sid=730e14&_nc_ohc=P2N50s9Rt6QAX_gLw5D&_nc_ht=scontent-lga3-2.xx&oh=9ba0d1368c5162e9d94119a55cd8b340&oe=6039C129" alt="Finn"> -->
+          <!-- <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/13613634_10153891997737672_3624086464354231983_o.jpg?_nc_cat=102&ccb=2&_nc_sid=cdbe9c&_nc_ohc=LMp6Cg_2opwAX9naVhf&_nc_ht=scontent-lga3-1.xx&oh=5704af2ae9ed4ed337e915489c371cab&oe=60399166" alt="Kota"> -->
