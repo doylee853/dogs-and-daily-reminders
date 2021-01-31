@@ -75,12 +75,12 @@ setInterval(function() {db.collection("dogs").findOne({}, function(err, result){
         if (err) return console.error(err);
         console.log('hopefully saved!');
     });
-})}, 10000);
+})}, 8000);
 
 setInterval(function() {db.collection("dogs").findOneAndDelete({}, function(err, result){
     if (err) throw err;
     console.log(result.dogName)
-})}, 10000);
+})}, 8000);
 
 
 
